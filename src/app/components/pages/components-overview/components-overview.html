@@ -1,0 +1,32 @@
+<app-hero
+  title="Components"
+  subtitle="Dies sind ein paar Beispielkomponenten."
+  buttonText="Components ansehen"
+  buttonLink="#overview"
+>
+</app-hero>
+
+<div class="grid-container">
+  <ng-container *ngFor="let project of projects">
+    <app-card
+      [title]="project.name"
+      [subtitle]="project.description"
+      [imageUrl]="project.image"
+      [linkUrl]="project.url">
+    </app-card>
+  </ng-container>
+</div>
+
+
+<app-accordion title="What is Pandao CRM?">
+  <p>Pandao CRM is a simple, modular CRM designed for small teams who want flexibility without the bloat.</p>
+</app-accordion>
+
+<app-accordion title="Can I host it myself?">
+  <p>Yes! Self-hosting is free and simple — just clone the repo and follow our Docker guide.</p>
+</app-accordion>
+
+<app-accordion title="Is it mobile-friendly?">
+  <p>Absolutely. All components are fully responsive and optimized for mobile devices.</p>
+</app-accordion>
+
