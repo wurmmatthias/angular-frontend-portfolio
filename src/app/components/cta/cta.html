@@ -1,0 +1,10 @@
+<section class="cta-section" [ngClass]="{ 'reverse': reverse }">
+  <div class="cta-text">
+    <h2>{{ title }}</h2>
+    <p>{{ text }}</p>
+    <a class="cta-button" [href]="buttonLink">{{ buttonLabel }}</a>
+  </div>
+  <div class="cta-image">
+    <img [src]="imageUrl" alt="{{ title }}" />
+  </div>
+</section>

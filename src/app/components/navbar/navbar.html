@@ -2,7 +2,7 @@
   <div class="container">
     <div class="logo">ngSandbox</div>
     <ul class="nav-links desktop-only">
-      <li><a roterLink="/">Start</a></li>
+      <li><a routerLink="/">Start</a></li>
       <li><a routerLink="/about">About</a></li>
       <li><a routerLink="/components">Components</a></li>
     </ul>
@@ -15,7 +15,8 @@
   </div>
 
   <ul class="mobile-menu" *ngIf="isMobileMenuOpen">
-    <li><a href="#about" (click)="toggleMobileMenu()">About</a></li>
-    <li><a href="#projects" (click)="toggleMobileMenu()">Projects</a></li>
+    <li><a routerLink="/" (click)="toggleMobileMenu()">Start</a></li>
+    <li><a routerLink="/about" (click)="toggleMobileMenu()">About</a></li>
+    <li><a routerLink="/components" (click)="toggleMobileMenu()">Components</a></li>
   </ul>
 </nav>
